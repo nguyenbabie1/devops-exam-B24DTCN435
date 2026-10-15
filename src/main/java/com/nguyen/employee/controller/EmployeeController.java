@@ -20,4 +20,9 @@ public class EmployeeController {
     public List<Employee> findAll() {
         return employeeService.findAll();
     }
+
+    @GetMapping("/count")
+    public long count() {
+        return employeeService.count();
+    }
 }
