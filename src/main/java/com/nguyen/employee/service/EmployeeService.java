@@ -18,4 +18,8 @@ public class EmployeeService {
     public List<Employee> findAll() {
         return employeeRepository.findAll();
     }
+
+    public long count() {
+        return employeeRepository.count();
+    }
 }
